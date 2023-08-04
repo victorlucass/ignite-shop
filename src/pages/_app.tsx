@@ -1,11 +1,8 @@
 import { AppProps } from "next/app";
+import { globalStyles } from "./styles/global";
 
+globalStyles();
 function MyApp({ Component, pageProps }: AppProps) {
-  return (
-    <>
-      <h1>cabeça</h1>
-      <Component {...pageProps} />
-    </>
-  );
+  return <Component {...pageProps} />;
 }
 export default MyApp;
